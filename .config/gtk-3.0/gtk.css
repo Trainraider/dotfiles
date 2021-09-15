@@ -1,0 +1,38 @@
+VteTerminal, vte-terminal {
+        padding: 15px;
+}
+#pulseaudio-button * {
+    -gtk-icon-transform: scale(.55);
+}
+#xfce4-power-manager-plugin * {
+    -gtk-icon-transform: scale(.55);
+}
+
+#whiskermenu-window {
+	background-color: transparent;
+	color: #ccc;
+}
+#whiskermenu-window button {
+	background-color: transparent;
+	color: #ccc;
+}
+#whiskermenu-window button:hover {
+	background-color: transparent;
+	color: #fff;
+}
+#whiskermenu-window button:checked {
+	background-color: transparent;
+	color: #fff;
+}
+#whiskermenu-window treeview {
+	background-color: transparent;
+	color: #ccc;
+}
+#whiskermenu-window treeview:hover {
+	background-color: transparent;
+	color: #fff;
+}
+
+#whiskermenu-window entry { 
+ 	background: transparent; 
+} 

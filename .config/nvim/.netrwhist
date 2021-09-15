@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/trainraider/.local/share/nvim/site/autoload'
+let g:netrw_dirhist_7='/home/trainraider/.local/share/nvim/site'
+let g:netrw_dirhist_6='/home/trainraider/.local/share/nvim'
+let g:netrw_dirhist_5='/home/trainraider/.local/share/nvim/shada'
+let g:netrw_dirhist_4='/home/trainraider/.local/share/nvim'
+let g:netrw_dirhist_3='/home/trainraider/.local/share/nvim/plugged'
+let g:netrw_dirhist_2='/home/trainraider/.local/share/nvim'
+let g:netrw_dirhist_1='/home/trainraider/Documents/meson2/test'
