@@ -37,7 +37,7 @@ function GplHeaderLuaStyle()
     endif
 endfunction
 
-au VimEnter *\.[ch] call GplHeaderCStyle()
+au VimEnter *\.\(c\|h\|zig\) call GplHeaderCStyle()
 au VimEnter \(*\.\(sh\|build\)\|makefile\|Makefile\) call GplHeaderBashStyle()
 au VimEnter *\.lua call GplHeaderLuaStyle()
 
