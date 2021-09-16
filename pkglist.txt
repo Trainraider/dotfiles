@@ -8,8 +8,6 @@ clangd
 clang-format
 clang-tools
 clang-tools-12
-dockbarx
-dockbarx-themes-extra
 fish
 fonts-firacode
 ghostwriter
@@ -285,12 +283,10 @@ light
 links2
 linux-headers-5.13.0-1009-oem
 linux-image-unsigned-5.13.0-1009-oem
-lsd
 luarocks
 lxc
-minecraft-launcher
+ninja-build
 nitrogen
-nodejs
 openssh-server
 python3-pip
 qemu
@@ -331,5 +327,4 @@ valgrind
 vlc-data
 vlc-plugin-base
 vlc-plugin-video-output
-xfce4-dockbarx-plugin
 xwallpaper

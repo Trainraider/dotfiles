@@ -1,7 +1,8 @@
 
 alias ls=lsd
-export VISUAL=vim
-export EDITOR=vim
+alias vim=nvim
+export VISUAL=nvim
+export EDITOR=nvim
 
 # pfetch
 starship init fish | source

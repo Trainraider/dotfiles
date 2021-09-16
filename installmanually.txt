@@ -2,9 +2,24 @@ https://github.com/mut-ex/wallpapers/blob/master/vividnightlandscape.jpg
 https://github.com/Airblader/i3
 https://github.com/ibhagwan/picom/tree/next-rebase
 https://github.com/neovim/neovim
+https://github.com/dylanaraps/pfetch
+https://gitlab.com/jallbrit/cbonsai
+https://github.com/extrawurst/gitui
 
+vim-plug:
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+       
+up to date nodejs for coc:
+sudo snap install node --classic --channel=edge
+       
 https://fonts.google.com/specimen/Fredoka+One
 https://github.com/ryanoasis/nerd-fonts
 
 pip3 install meson
 
+sudo add-apt-repository ppa:xuzhen666/dockbarx
+sudo apt update
+sudo apt install dockbarx xfce4-dockbarx-plugin dockbarx-themes-extra
+
+https://github.com/Peltoche/lsd
