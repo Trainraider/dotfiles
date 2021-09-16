@@ -1,12 +1,13 @@
 VteTerminal, vte-terminal {
         padding: 15px;
 }
-#pulseaudio-button * {
+/* Uncomment blocks below if on linux mint */
+/*#pulseaudio-button * {
     -gtk-icon-transform: scale(.55);
 }
 #xfce4-power-manager-plugin * {
     -gtk-icon-transform: scale(.55);
-}
+}*/
 
 #whiskermenu-window {
 	background-color: transparent;
