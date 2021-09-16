@@ -12,6 +12,12 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        
 up to date nodejs for coc:
 sudo snap install node --classic --channel=edge
+
+Coc plugins:
+coc-clangd
+coc-git
+coc-json
+coc-zig
        
 https://fonts.google.com/specimen/Fredoka+One
 https://github.com/ryanoasis/nerd-fonts
