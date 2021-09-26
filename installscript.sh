@@ -58,7 +58,7 @@ sudo make install
 
 #Gitui
 #this rust stuff is a real pain to install system-wide
-curl https://sh.rustup.rs -sSf | sudo sh
+curl https://sh.rustup.rs -sSf | sudo sh -s -- -y
 sudo /root/.cargo/bin/cargo install gitui --root /usr
 
 #lsd
@@ -77,9 +77,9 @@ export extensions='coc-clangd coc-zig coc-git coc-json'
 nvim --headless +"CocInstall -sync $extensions|qa"
 
 #DockbarX
-sudo add-apt-repository ppa:xuzhen666/dockbarx
+sudo add-apt-repository ppa:xuzhen666/dockbarx -y
 sudo apt update
-sudo apt install dockbarx xfce4-dockbarx-plugin dockbarx-themes-extra
+sudo apt install -y dockbarx xfce4-dockbarx-plugin dockbarx-themes-extra
 
 #Fredoka One font
 mkdir -p /tmp/fredoka
@@ -89,7 +89,6 @@ unzip Fredoka_One.zip
 rm Fredoka_One.zip
 sudo mkdir -p /usr/share/fonts/fredoka_one
 sudo mv * /usr/share/fonts/fredoka_one
-sudo fc-cache -fv
 
 #Hack Nerd Font
 mkdir -p /tmp/hack
@@ -99,6 +98,8 @@ unzip Hack.zip
 rm Hack.zip
 sudo mkdir -p /usr/share/fonts/hack_nerd_font
 sudo mv * /usr/share/fonts/hack_nerd_font
+
+#update font cache
 sudo fc-cache -fv
 
 cd ~
