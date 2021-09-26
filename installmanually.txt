@@ -4,7 +4,9 @@ https://github.com/ibhagwan/picom
 https://github.com/neovim/neovim
 https://github.com/dylanaraps/pfetch
 https://gitlab.com/jallbrit/cbonsai
+https://github.com/stoeckmann/xwallpaper.git
 https://github.com/extrawurst/gitui
+https://github.com/Peltoche/lsd
 
 vim-plug:
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -28,4 +30,3 @@ sudo add-apt-repository ppa:xuzhen666/dockbarx
 sudo apt update
 sudo apt install dockbarx xfce4-dockbarx-plugin dockbarx-themes-extra
 
-https://github.com/Peltoche/lsd
