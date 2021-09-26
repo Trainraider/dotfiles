@@ -54,6 +54,7 @@ libgl1-mesa-dev
 libgtk-3-dev
 libgtkmm-2.4-1v5
 libheif1
+libjpeg-turbo8-dev
 libiconv-hook1
 libiconv-hook-dev
 libixml10
@@ -323,4 +324,3 @@ valgrind
 vlc-data
 vlc-plugin-base
 vlc-plugin-video-output
-xwallpaper

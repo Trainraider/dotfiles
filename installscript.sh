@@ -5,8 +5,18 @@
 cat pkglist.txt | xargs sudo apt -y install
 
 #fetch wallpaper
-cd ~/Pictures
+mkdir ~/Pictures/backgrounds
+cd ~/Pictures/backgrounds
 wget https://raw.githubusercontent.com/mut-ex/wallpapers/master/vividnightlandscape.jpg
+
+#xwallpaper, apt version crashes under recent glibc
+cd /tmp
+git clone --single-branch --depth=1 https://github.com/stoeckmann/xwallpaper.git
+cd xwallpaper
+./autogen.sh
+./configure
+make
+make install
 
 #install up-to-date meson, don't use apt for this
 sudo pip3 install meson
