@@ -1,6 +1,6 @@
 https://github.com/mut-ex/wallpapers/blob/master/vividnightlandscape.jpg
 https://github.com/Airblader/i3
-https://github.com/ibhagwan/picom/tree/next-rebase
+https://github.com/ibhagwan/picom
 https://github.com/neovim/neovim
 https://github.com/dylanaraps/pfetch
 https://gitlab.com/jallbrit/cbonsai
