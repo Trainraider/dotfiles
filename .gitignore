@@ -2,7 +2,9 @@
 !\.gitignore
 
 !\.selected_editor
+
 !installmanually.txt
+!installscript.sh
 !pkglist.txt
 
 !\.config
