@@ -102,4 +102,29 @@ sudo mv * /usr/share/fonts/hack_nerd_font
 #update font cache
 sudo fc-cache -fv
 
+#Candy icon theme
+cd /tmp
+mkdir candy_icons
+cd candy_icons
+wget -O candy.zip https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
+unzip candy.zip
+rm candy.zip
+sudo mv candy-icons-master /usr/share/icons/candy-icons
+sudo update-icon-caches /usr/share/icons/candy-icons/
+
+#Sweet theme
+cd /tmp
+mkdir sweet
+cd sweet
+wget https://github.com/EliverLara/Sweet/releases/latest/download/Sweet-Dark.tar.xz
+tar xf Sweet-Dark.tar.xz
+rm Sweet-Dark.tar.xz
+
+
+#Oh my fish
+curl -L https://get.oh-my.fish | fish
+
+#starship prompt
+sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+
 cd ~
