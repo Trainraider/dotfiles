@@ -21,6 +21,9 @@ make install
 #install up-to-date meson, don't use apt for this
 sudo pip3 install meson
 
+#For python extensions and LSPs
+sudo pip3 install jedi
+
 #i3 gaps
 cd /tmp
 git clone --single-branch --depth=1 https://github.com/Airblader/i3
@@ -73,7 +76,7 @@ sudo snap install node --classic --channel=edge
 
 #nvim extensions
 nvim --headless +'PlugInstall --sync' +qa
-export extensions='coc-clangd coc-zig coc-git coc-json'
+export extensions='coc-clangd coc-zig coc-git coc-json coc-python'
 nvim --headless +"CocInstall -sync $extensions|qa"
 
 #DockbarX
