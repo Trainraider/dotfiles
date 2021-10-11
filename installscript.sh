@@ -1,7 +1,10 @@
 #!/bin/bash
 #untested
 
-#insteall everything in pkglist.txt
+sudo apt update
+sudo apt upgrade
+
+#install everything in pkglist.txt
 cat pkglist.txt | xargs sudo apt -y install
 
 #fetch wallpaper
@@ -16,7 +19,7 @@ cd xwallpaper
 ./autogen.sh
 ./configure
 make
-make install
+sudo make install
 
 #install up-to-date meson, don't use apt for this
 sudo pip3 install meson
@@ -33,7 +36,7 @@ sudo meson install -C build
 cd /tmp
 git clone --single-branch --depth=1 https://github.com/ibhagwan/picom
 cd picom
-meson setup build --buildtype = release
+meson setup build --buildtype=release
 meson compile -C build
 sudo meson install -C build
 
