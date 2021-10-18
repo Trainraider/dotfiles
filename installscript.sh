@@ -7,6 +7,10 @@ sudo apt upgrade
 #install everything in pkglist.txt
 cat pkglist.txt | xargs sudo apt -y install
 
+#install pip2
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+sudo python2 get-pip.py
+
 #fetch wallpaper
 mkdir ~/Pictures/backgrounds
 cd ~/Pictures/backgrounds

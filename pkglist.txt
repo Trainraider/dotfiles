@@ -285,6 +285,7 @@ lxc
 ninja-build
 nitrogen
 openssh-server
+python2
 python3-pip
 qemu
 qml-module-org-kde-bluezqt
