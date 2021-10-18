@@ -14,6 +14,10 @@ sudo python2 get-pip.py
 #disable keyring in pip
 PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
 
+#install debugpy
+pip3 install debugpy
+pip2 install debugpy
+
 #fetch wallpaper
 mkdir ~/Pictures/backgrounds
 cd ~/Pictures/backgrounds
