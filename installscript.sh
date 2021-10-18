@@ -2,7 +2,7 @@
 #untested
 
 sudo apt update
-sudo apt upgrade
+sudo apt upgrade -y
 
 #install everything in pkglist.txt
 cat pkglist.txt | xargs sudo apt -y install
@@ -10,6 +10,9 @@ cat pkglist.txt | xargs sudo apt -y install
 #install pip2
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
 sudo python2 get-pip.py
+
+#disable keyring in pip
+PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
 
 #fetch wallpaper
 mkdir ~/Pictures/backgrounds
