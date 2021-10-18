@@ -325,3 +325,4 @@ valgrind
 vlc-data
 vlc-plugin-base
 vlc-plugin-video-output
+zenity

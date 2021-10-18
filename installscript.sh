@@ -137,6 +137,14 @@ wget https://github.com/EliverLara/Sweet/releases/latest/download/Sweet-Dark.tar
 tar xf Sweet-Dark.tar.xz
 rm Sweet-Dark.tar.xz
 
+#setup ssh and git
+ssh-keygen -t rsa -b 4096 -C "Github"
+cd /usr/share/doc/git/contrib/credential/libsecret/
+sudo make
+git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+zenity --info --text="Add key to github:\n$(cat .ssh/id_rsa.pub)"
+
+cd /tmp
 
 #Oh my fish
 curl -L https://get.oh-my.fish | fish
