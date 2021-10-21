@@ -138,11 +138,13 @@ tar xf Sweet-Dark.tar.xz
 rm Sweet-Dark.tar.xz
 
 #setup ssh and git
-ssh-keygen -t rsa -b 4096 -C "Github"
+ssh-keygen -t rsa -b 4096 -C "Github" -N "" -f "$HOME/.ssh/id_rsa"
 cd /usr/share/doc/git/contrib/credential/libsecret/
 sudo make
 git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
-zenity --info --text="Add key to github:\n$(cat .ssh/id_rsa.pub)"
+cd ~
+cat $HOME/.ssh/id_rsa.pub | xclip -selection c
+zenity --info --text="Your ssh key has been copied to your clipboard, add it to Github now or whatever else you want to do with it"
 
 cd /tmp
 
